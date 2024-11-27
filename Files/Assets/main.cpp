@@ -302,43 +302,87 @@ public:
 // ************  --------------  FUNCOES   --------------  ************//
 
 int CadastroPassageiro(class PASSAGEIRO &passageiro) {
+    cout<<"---------- Cadastro de Passageiros Selecionado ----------\n"<<endl;
+  
     return 0;
 };
 
 int CadastroTripulacao(class TRIPULACAO &tripulacao) {
+  cout<<"---------- Cadastro de Tripulação Selecionado ----------\n"<<endl;
     return 0;
 };
 
 int CadastroVoo(class VOO &voo) {
+  cout<<"---------- Cadastro de Voo Selecionado ----------\n"<<endl;
     return 0;
 };
 
 int CadastroAssento(class ASSENTO &assento) {
+  cout<<"---------- Cadastro de Assento Selecionado ----------\n"<<endl;
     return 0;
 };
 
 int VerificarReserva(class RESERVA &reserva) {
+  cout<<"---------- Verificação de Reservas Selecionado ----------\n"<<endl;
     return 0;
 };
 
 int BaixarReserva(class RESERVA &reserva) {
+  cout<<"---------- Baixar Reservas Selecionado ----------\n"<<endl;
     return 0;
 };
 
 int PesquisarPessoa(class PASSAGEIRO &passageiro, class TRIPULACAO &tripulacao) {
+  cout<<"---------- Pesquisa de Pessoa Selecionado ----------\n"<<endl;
     return 0;
+};
+
+int escolhaFuncao(int escolhaFuncao){
+
+  PASSAGEIRO passageiro;
+  TRIPULACAO tripulacao;
+  VOO voo;
+  ASSENTO assento;
+  RESERVA reserva;
+
+  switch(escolhaFuncao){
+
+  case 1: CadastroPassageiro(passageiro); break;
+  case 2: CadastroTripulacao(tripulacao); break;
+  case 3: CadastroVoo(voo); break;
+  case 4: CadastroAssento(assento); break;
+  case 5: VerificarReserva(reserva); break;
+  case 6: BaixarReserva(reserva); break;
+  case 7: PesquisarPessoa(passageiro,tripulacao); break;
+  case 0: cout << "Fechando o programa" << endl; return 0;
+  default: cout <<"Opção invalida, escolha uma opção de 1 a 7"<<endl; return escolhaFuncao;
+
+  }
+
+  return 0;
 };
 
 // ************  --------------  MAIN   --------------  ************//
 
 int main(){
     setlocale(LC_ALL, "portuguese");
-    int escolhaFuncao;
+    int escolha = 0;
 
-    cout <<"Bem vindo(a) ao Voe Tranqulo!\n"<< endl;
-    cout <<"------------------------------------\n"<< endl;
-    cout <<"O que você deseja?\n1 - Cadastrar Passageiro\n2 - Cadastrar Tripulação\n3 - Cadastrar Voos\n4 - Cadastrar Assento\n5 - Verificar Reserva\n6 - Baixar Reserva\n7 - Pesquisa de Pessoa\n0 - Encerrar o Programa\n"<<endl;
-    cin >> escolhaFuncao;
+  do {
+      cout << "\nBem-vindo(a) ao Voe Tranquilo!\n"
+           << "------------------------------------\n"
+           << "O que você deseja?\n"
+           << "1 - Cadastrar Passageiro\n"
+           << "2 - Cadastrar Tripulação\n"
+           << "3 - Cadastrar Voos\n"
+           << "4 - Cadastrar Assento\n"
+           << "5 - Verificar Reserva\n"
+           << "6 - Baixar Reserva\n"
+           << "7 - Pesquisa de Pessoa\n"
+           << "0 - Encerrar o Programa\n" << endl;
+      cout << "Escolha o que deseja: ";
+      cin >> escolha;
+  } while (escolhaFuncao(escolha) < 0);
 
-    // vou finalizar essa parte amanha //
-};
+
+    }
