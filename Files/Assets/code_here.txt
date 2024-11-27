@@ -1,1 +1,0 @@
-Só apaga esse arquivo aqui quando tiver o arquivo do código, pra substituir, esse arquivo só está aqui para deixar claro onde colocar cada arquivo.
