@@ -4,7 +4,7 @@
 
 using namespace std;
 
-// ************  --------------  CLASSE   --------------  ************//
+// ************  --------------  CLASSES   --------------  ************//
 
 class Padroes
 {
@@ -54,7 +54,7 @@ public:
         }
         else
         {
-            throw invalid_argument("O código tem que ser maior que 0");
+            throw invalid_argument("O cÃ³digo tem que ser maior que 0");
         }
     }
 
@@ -69,7 +69,7 @@ public:
         }
         else
         {
-            throw invalid_argument("O código tem que ser maior que 0");
+            throw invalid_argument("O cÃ³digo tem que ser maior que 0");
         }
     }
 
@@ -84,7 +84,7 @@ public:
         }
         else
         {
-            throw invalid_argument("O código tem que ser maior que 0");
+            throw invalid_argument("O cÃ³digo tem que ser maior que 0");
         }
     }
 
@@ -337,7 +337,7 @@ int main(){
 
     cout <<"Bem vindo(a) ao Voe Tranqulo!\n"<< endl;
     cout <<"------------------------------------\n"<< endl;
-    cout <<"O que você deseja?\n1 - Cadastrar Passageiro\n2 - Cadastrar Tripulação\n3 - Cadastrar Voos\n4 - Cadastrar Assento\n5 - Verificar Reserva\n6 - Baixar Reserva\n7 - Pesquisa de Pessoa\n0 - Encerrar o Programa\n"<<endl;
+    cout <<"O que vocÃª deseja?\n1 - Cadastrar Passageiro\n2 - Cadastrar TripulaÃ§Ã£o\n3 - Cadastrar Voos\n4 - Cadastrar Assento\n5 - Verificar Reserva\n6 - Baixar Reserva\n7 - Pesquisa de Pessoa\n0 - Encerrar o Programa\n"<<endl;
     cin >> escolhaFuncao;
 
     // vou finalizar essa parte amanha //
